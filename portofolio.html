@@ -106,8 +106,34 @@
     height: 100%;     /* Foto memenuhi tinggi kotak */
     object-fit: cover; /* Foto akan terpotong rapi tanpa gepeng/ketarik */
     object-position: top; /* Fokus ke area wajah (atas) */
-}
+   }
+    /* Pengaturan Responsif untuk HP */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Mengubah posisi teks dan gambar jadi berurutan ke bawah */
+        text-align: center;      /* Membuat teks rata tengah di HP */
+        padding: 40px 5%;       /* Memperkecil padding agar tidak terlalu sempit */
+        gap: 30px;               /* Mengurangi jarak antara teks dan gambar */
+    }
 
+    .hero-text h1 {
+        font-size: 2.5rem;      /* Mengecilkan ukuran judul agar muat di layar HP */
+    }
+
+    .hero-text p {
+        margin: 0 auto 15px auto; /* Menengahkan paragraf di HP */
+        max-width: 100%;
+    }
+
+    .btn-group {
+        justify-content: center; /* Menengahkan tombol di HP */
+    }
+
+    .blue-box {
+        width: 300px;           /* Mengecilkan sedikit ukuran kotak biru di HP */
+        height: 380px;
+    }
+}
     .circle-yellow {
         width: 60px; height: 60px;
         background-color: #f1c40f;
@@ -125,7 +151,41 @@
         right: -10px; top: 5%;
         z-index: 0;
     }
+    /* Pengaturan Responsif untuk HP */
+    @media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Foto pindah ke bawah teks */
+        text-align: center;
+        gap: 40px;
+    }
 
+    /* Menjaga posisi bulatan agar tetap menempel di dekat kotak foto */
+    .hero-image {
+        position: relative; /* Pastikan ini ada agar bulatan tidak lari ke luar layar */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .circle-yellow {
+        width: 50px; /* Ukuran diperkecil sedikit agar pas untuk layar HP */
+        height: 50px;
+        left: 15%;  /* Geser posisi agar menempel di kotak foto yang sudah di tengah */
+        bottom: 5%;
+    }
+
+    .circle-red {
+        width: 65px; /* Ukuran diperkecil sedikit */
+        height: 65px;
+        right: 15%; /* Geser posisi agar menempel di kotak foto yang sudah di tengah */
+        top: -10px;
+    }
+
+    .blue-box {
+        width: 280px; /* Ukuran kotak biru disesuaikan untuk layar HP */
+        height: 350px;
+    }
+}
     /* Menu Ikon Bawah */
     /* Bagian Bawah: Menu Ikon Bulat */
 .icon-menu {
