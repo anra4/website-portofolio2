@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Lengkap - [Nama Anda]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #0056b3;
+            font-size: 2.5rem;
+        }
+
+        /* Gaya Kotak Informasi (Section) */
+        .section-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid #0056b3; /* Aksen garis biru di kiri */
+            display: flex; 
+            align-items: flex-start; /* Sejajar dari atas */
+            justify-content: space-between; /* Memberi jarak antara teks dan peta */
+            gap: 20px; /* Jarak antara teks dan peta */
+            flex-wrap: wrap; /* Agar jika di layar HP, peta pindah ke bawah otomatis */
+        }
+    
+
+        .section-box h2 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-lulus {
+        background-color: #27ae60; /* Warna Hijau */
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    /* Memastikan teks informasi sejajar rapi */
+    
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #003d80;
+            transform: translateX(-5px);
+        }
+
+        /* List untuk Hobi agar rapi */
+        .hobi-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .hobi-item {
+            background: #e1ecf7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+         .footer-copyright {
+    text-align: center;
+    padding: 25px 0; /* Sedikit lebih lebar agar lega */
+    background-color: #f1f1f1; 
+    color: #333;             /* Warna diganti ke lebih gelap agar jelas */
+    font-size: 1.1rem;       /* Ukuran standar dinaikkan (sebelumnya 0.9) */
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    font-weight: 500;        /* Sedikit lebih tebal */
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 1rem;     /* Di HP tidak terlalu kecil (sebelumnya 0.8) */
+        padding: 20px 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tentang Pendidikan</h1>
+            <p>Mengenal lebih dekat perjalanan profesional dan pribadi saya.</p>
+        </header>
+
+        <div class="section-box">
+            <h2>👩‍🎓SD Negeri 1 Tanjunganom<span class="badge-lulus">Lulus-2020</span></h2>
+            <p>
+              Nama	                    :	SD NEGERI 1 TANJUNG ANOM KECAMATAN PASALEMAN<br>
+ 	          NPSN	                    :	20215473<br>
+ 	          Alamat	                :	Jl. Raya Tanjunganom Kec. Pasaleman Kab. Cirebon<br>
+ 	          Desa/Kelurahan	        :	TANJUNG ANOM<br>
+              Kecamatan/Kota (LN)	    :	KEC. PASALEMAN<br>
+              Kab.-Kota/Negara (LN)	    :	KAB. CIREBON<br>
+ 	          Propinsi/Luar Negeri (LN)	:	PROV. JAWA BARAT<br>
+ 	          Status Sekolah	        :	NEGERI<br>
+              Bentuk Pendidikan	        :	SD<br>
+ 	          Jenjang Pendidikan	    :	DIKDAS<br> 
+            </p>
+
+           <div class="maps-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.560376761568!2d108.7559303748228!3d-6.943024893057075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f090aeb9566a3%3A0x34c206c48ef7d2d2!2sSDN%201%20Tanjung%20Anom!5e0!3m2!1sen!2sus!4v1778470558539!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+            
+        </div>
+        <div class="section-box">
+            <h2>👩‍🎓SMP AN-NUUR PASALEMAN<span class="badge-lulus">Lulus-2023</span></h2>
+            <p>
+ 	         Alamat	                    :	Jl. Raya Pasaleman No. 2<br>
+             NPSN	                    :		20214810<br>
+ 	         Desa/Kelurahan          	:	CIKEUSIK<br>
+ 	         Kecamatan/Kota (LN)	    :	PASALEMAN<br>
+ 	         Kab.-Kota/Negara (LN)	    :	KAB. CIREBON<br>
+ 	         Propinsi/Luar Negeri (LN)	:	PROV. JAWA BARAT<br>
+ 	         Status Sekolah	            :	SWASTA<br>
+ 	         Bentuk Pendidikan      	:	SMP<br>
+ 	         Jenjang Pendidikan     	:	DIKDAS
+            </p>
+
+           <div class="maps-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7340147347854!2d108.72667707781096!3d-6.9223665752276275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f093b34325409%3A0x2147f8eb4e8fb230!2sSMP%20AN-NUUR%20PASALEMAN!5e0!3m2!1sen!2sus!4v1778472318866!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+            
+        </div>  
+         <div class="section-box">
+            <h2>👩‍🎓SMK NEGERI 4 KUNINGAN<span class="badge-lulus">Lulus-2026</span></h2>
+            <p>
+ 	         Alamat	                    :	JL. RAYA CIKEUSIK - CIDAHU<br>
+             NPSN	                    :	20246369<br>
+ 	         Desa/Kelurahan          	:	CIKEUSIK<br>
+ 	         Kecamatan/Kota (LN)	    :	KEC. CIDAHU<br>
+ 	         Kab.-Kota/Negara (LN)	    :	KAB. KUNINGAN<br>
+ 	         Propinsi/Luar Negeri (LN)	:	PROV. JAWA BARAT<br>
+ 	         Status Sekolah	            :	NEGERI<br>
+ 	         Bentuk Pendidikan      	:	SMK<br>
+ 	         Jenjang Pendidikan     	:	DIKMEN
+            </p>
+
+           <div class="maps-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4519815934177!2d108.68152037482288!3d-6.955890093044438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f0e97e9beddcb%3A0x2fd17d5f9eaf9d66!2sSMK%20Negeri%204%20Kuningan!5e0!3m2!1sen!2sus!4v1778470791876!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+            
+        </div>
+
+        <div style="text-align: center;">
+            <a href="portofolio.html" class="back-btn">← Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+     <footer class="footer-copyright">
+    <p>&copy; 2026 Anra. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

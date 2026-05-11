@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keahlian - Portofolio Anra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Menengahkan container */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #0056b3;
+            font-size: 2.5rem;
+        }
+
+        /* Kotak Keahlian (Mirip Section Box Pengalaman) */
+        .skill-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 8px solid #0056b3; /* Garis tebal di kiri agar sama */
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .skill-icon {
+            font-size: 3.5rem;
+            flex-basis: 80px;
+            text-align: center;
+        }
+
+        .skill-info {
+            flex: 1;
+        }
+
+        .skill-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* Progress Bar */
+        .progress-bg {
+            width: 100%;
+            background-color: #e1ecf7;
+            border-radius: 10px;
+            height: 12px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #0056b3;
+            border-radius: 10px;
+            transition: width 1s ease-in-out;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #003d80;
+        }
+
+        /* Responsif HP */
+        @media (max-width: 600px) {
+            .skill-box {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+         .footer-copyright {
+    text-align: center;
+    padding: 25px 0; /* Sedikit lebih lebar agar lega */
+    background-color: #f1f1f1; 
+    color: #333;             /* Warna diganti ke lebih gelap agar jelas */
+    font-size: 1.1rem;       /* Ukuran standar dinaikkan (sebelumnya 0.9) */
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    font-weight: 500;        /* Sedikit lebih tebal */
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 1rem;     /* Di HP tidak terlalu kecil (sebelumnya 0.8) */
+        padding: 20px 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Keahlian Saya</h1>
+            <p>Kemampuan teknis yang saya kuasai.</p>
+        </header>
+
+        <div class="skill-box">
+            <div class="skill-icon">🤝</div>
+            <div class="skill-info">
+                <h3>Kerja Sama Tim</h3>
+                <p>Memiliki kemampuan komunikasi yang baik dalam lingkungan kerja.</p>
+                <div class="progress-bg">
+                    <div class="progress-fill" style="width:60%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-box">
+         <div class="skill-icon">⏳</div>
+         <div class="skill-info">
+          <h3>Manajemen Tekanan</h3>
+          <p>Mampu tetap tenang dan produktif dalam menyelesaikan tugas meskipun di bawah tekanan atau situasi kerja yang sibuk.</p>
+          <div class="progress-bg">
+            <div class="progress-fill" style="width: 75%;"></div>
+         </div>
+         </div>
+        </div>
+        
+        <div class="skill-box">
+         <div class="skill-icon">🎯</div>
+        <div class="skill-info">
+        <h3>Etos Kerja & Kedisiplinan</h3>
+        <p>Berkomitmen tinggi pada kejujuran, ketepatan waktu, serta selalu berusaha memberikan hasil terbaik dalam setiap tanggung jawab.</p>
+        <div class="progress-bg">
+            <div class="progress-fill" style="width: 90%;"></div>
+        </div>
+       </div>
+      </div>
+      <div style="text-align: center;">
+            <a href="portofolio.html" class="back-btn">← Kembali ke Halaman Utama</a>
+        </div>
+
+    </div>
+      <footer class="footer-copyright">
+    <p>&copy; 2026 Anra. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

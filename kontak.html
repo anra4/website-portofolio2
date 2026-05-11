@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Hubungi Saya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #0056b3;
+            font-size: 2.5rem;
+        }
+
+        .section-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 8px solid #0056b3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-text h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-list {
+            list-style: none;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-list a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .contact-list a:hover {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+
+        .icon-large {
+            flex-basis: 150px;
+            text-align: center;
+            font-size: 6rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Animasi melayang agar ikon lebih hidup */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .back-btn {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .section-box {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .contact-list li {
+                justify-content: center;
+            }
+        }
+        .footer-copyright {
+    text-align: center;
+    padding: 25px 0; /* Sedikit lebih lebar agar lega */
+    background-color: #f1f1f1; 
+    color: #333;             /* Warna diganti ke lebih gelap agar jelas */
+    font-size: 1.1rem;       /* Ukuran standar dinaikkan (sebelumnya 0.9) */
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    font-weight: 500;        /* Sedikit lebih tebal */
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 1rem;     /* Di HP tidak terlalu kecil (sebelumnya 0.8) */
+        padding: 20px 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kontak</h1>
+            <p>Silakan hubungi saya melalui saluran di bawah ini.</p>
+        </header>
+
+        <div class="section-box">
+            <div class="info-text">
+                <h2>Mari Berdiskusi!</h2>
+                <p>Saya terbuka untuk peluang kerja, magang, atau sekadar bertukar ide.</p>
+                
+                <ul class="contact-list">
+                    <li>
+                        <span>🟢</span> 
+                        <strong>WhatsApp:</strong> 
+                        <a href="https://wa.me/83824484713" target="_blank">+62 83824484713</a>
+                    </li>
+                    <li>
+                        <span>📧</span> 
+                        <strong>Email:</strong> 
+                        <a href="mailto:antikarash58@gmail.com">antikarash58@gmail.com</a>
+                    </li>
+                    <li>
+                        <span>📍</span> 
+                        <strong>Domisili:</strong> Cirebon, Jawa Barat
+                    </li>
+                </ul>
+            </div>
+
+            <div class="icon-large">
+                📱
+            </div>
+        </div>
+    </div>
+
+   <div style="text-align: center;">
+            <a href="portofolio.html" class="back-btn">← Kembali ke Halaman Utama</a>
+        </div>
+     <footer class="footer-copyright">
+    <p>&copy; 2026 Anra. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

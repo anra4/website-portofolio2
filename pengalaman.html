@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Lengkap - [Nama Anda]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #0056b3;
+            font-size: 2.5rem;
+        }
+
+        /* Gaya Kotak Informasi (Section) */
+        .section-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid #0056b3; /* Aksen garis biru di kiri */
+            display: flex; 
+            align-items: flex-start; /* Sejajar dari atas */
+            justify-content: space-between; /* Memberi jarak antara teks dan peta */
+            gap: 20px; /* Jarak antara teks dan peta */
+            flex-wrap: wrap; /* Agar jika di layar HP, peta pindah ke bawah otomatis */
+        }
+    
+
+        .section-box h2 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-lulus {
+        background-color: #27ae60; /* Warna Hijau */
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    /* Memastikan teks informasi sejajar rapi */
+    
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #003d80;
+            transform: translateX(-5px);
+        }
+
+        /* List untuk Hobi agar rapi */
+        .hobi-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .hobi-item {
+            background: #e1ecf7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .footer-copyright {
+    text-align: center;
+    padding: 25px 0; /* Sedikit lebih lebar agar lega */
+    background-color: #f1f1f1; 
+    color: #333;             /* Warna diganti ke lebih gelap agar jelas */
+    font-size: 1.1rem;       /* Ukuran standar dinaikkan (sebelumnya 0.9) */
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    font-weight: 500;        /* Sedikit lebih tebal */
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 1rem;     /* Di HP tidak terlalu kecil (sebelumnya 0.8) */
+        padding: 20px 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+   <div class="container">
+    <header>
+        <h1>Pengalaman</h1>
+        <p>Mengenal lebih dekat perjalanan profesional dan pribadi saya.</p>
+    </header>
+
+    <div class="section-box">
+        <div class="info-text">
+            <h2>Prisma Digital <br>Printing & Advertising <span class="badge-lulus">PKL Selesai</span></h2>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px;">
+                📍 Jl. Pangeran Sutajaya, Pabuaran Lor, Cirebon<br>
+                📅 <strong>Periode:</strong>27juli-29November 2023
+            </p>
+            
+            <h4 style="color: #0056b3; margin-top: 15px; margin-bottom: 5px;">Tugas & Tanggung Jawab:</h4>
+            <ul style="margin-left: 20px; font-size: 0.95rem; color: #333;">
+                <li>Mendesain media promosi (Banner) menggunakan Canva.</li>
+                <li>Melakukan finishing: pemotongan, pengeleman,<br>ngepres mata ayam (bolongan),<br> melipat, dan menggulung spanduk.</li>
+                <li>Menjaga kebersihan dan kerapihan area operasional toko.</li>
+            </ul>
+        </div>
+        
+        <div class="maps-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.894453819258!2d108.71840017482243!3d-6.903223893096104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f08b64e25e3ab%3A0xd545ed2e3d703501!2sPrisma%20Digital%20Printing%20%26%20Advertising%20Pabuaran%20(CV.%20Prisma%20Masagi)!5e0!3m2!1sen!2sus!4v1778477066753!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="info-text">
+            <h2>Toko Serba 35 Ribu <span class="badge-lulus">Kerja Selesai</span></h2>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px;">
+                📍 Jl. Jatiseeng Kidul, Jatiseeng, Cirebon<br>
+                📅 <strong>Periode:</strong> 6-20 Februari 2026
+            </p>
+            
+            <h4 style="color: #0056b3; margin-top: 15px; margin-bottom: 5px;">Tugas & Tanggung Jawab:</h4>
+            <ul style="margin-left: 20px; font-size: 0.95rem; color: #333;">
+                <li>Visual Merchandising Assistance: Membantu penataan pakaian <br>di area pajang agar terlihat menarik bagi konsumen.</li>
+                <li>Melakukan penataan barang (*display*) agar rapi dan menarik.</li>
+                <li>Menjaga kebersihan area toko demi kenyamanan pengunjung.</li>
+            </ul>
+        </div>
+
+        <div class="maps-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330.0635719421733!2d108.74059412710756!3d-6.906710465235289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f09a0c5f20b23%3A0x4e700e8d1eb2dc1d!2sToko%20Serba%2035%20Ribu!5e0!3m2!1sen!2sus!4v1778475921862!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+      <div style="text-align: center;">
+            <a href="portofolio.html" class="back-btn">← Kembali ke Halaman Utama</a>
+        </div>
+    
+     <footer class="footer-copyright">
+    <p>&copy; 2026 Anra. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Lengkap - [Nama Anda]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #0056b3;
+            font-size: 2.5rem;
+        }
+
+        /* Gaya Kotak Informasi (Section) */
+        .section-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid #0056b3; /* Aksen garis biru di kiri */
+        }
+
+        .section-box h2 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #003d80;
+            transform: translateX(-5px);
+        }
+
+        /* List untuk Hobi agar rapi */
+        .hobi-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .hobi-item {
+            background: #e1ecf7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #0056b3;
+            font-weight: bold;
+        }
+     .footer-copyright {
+      text-align: center;
+      padding: 25px 0; /* Sedikit lebih lebar agar lega */
+      background-color: #f1f1f1; 
+      color: #333;             /* Warna diganti ke lebih gelap agar jelas */
+      font-size: 1.1rem;       /* Ukuran standar dinaikkan (sebelumnya 0.9) */
+      border-top: 1px solid #ddd;
+     margin-top: 30px;
+     font-weight: 500;        /* Sedikit lebih tebal */
+     }
+
+       /* Responsif untuk HP */
+       @media (max-width: 768px) {
+      .footer-copyright {
+        font-size: 1rem;     /* Di HP tidak terlalu kecil (sebelumnya 0.8) */
+        padding: 20px 15px;
+       }
+      } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tentang Saya</h1>
+            <p>Mengenal lebih dekat perjalanan profesional dan pribadi saya.</p>
+        </header>
+
+        <div class="section-box">
+            <h2>👤 Biografi Singkat</h2>
+            <p>
+                Saya adalah seorang lulusan SMK NEGERI 4 KUNINGAN yang memiliki ketertarikan besar dalam dunia berbagai bidang operasional dan industri kreatif. 
+                Lahir dan besar di Cirebon, Jawa Barat, saya terbiasa bekerja keras dan menghargai nilai-nilai kejujuran dalam lingkungan kerja.
+            </p>
+        </div>
+
+        <div class="section-box">
+            <h2>🎨 Hobi & Ketertarikan</h2>
+            <p>Di waktu senggang, saya senang mengeksplorasi kreativitas dan menjaga keseimbangan hidup melalui:</p>
+            <ul class="hobi-list">
+                <li class="hobi-item">Membaca Novel </li>
+                <li class="hobi-item">Berimajinasi </li>
+                <li class="hobi-item">Olahraga Sepeda</li>
+                <li class="hobi-item">Membuat prakarya</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>🚀 Motivasi Kerja</h2>
+            <p>
+            Bekerja bukan hanya tentang menyelesaikan tugas, tetapi tentang memberikan nilai tambah dan solusi di setiap kesempatan
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="portofolio.html" class="back-btn">← Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+     <footer class="footer-copyright">
+    <p>&copy; 2026 Anra. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
